@@ -1,4 +1,10 @@
 /* Base Styles */
+body {
+    color: black;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
 .section-tall {
     height: 1000px;
     background-color: #f5f5f5;
@@ -17,15 +23,12 @@
     position: relative;
     border: none;
     margin-bottom: 0;
-    background-color: rgb(62, 62, 62);
+    background-color: lightgrey;
 }
 
-/* .navbar-brand {
-    float: left ;
-    font-size: 1.5em;
-    padding: 10px 15px;
-    color: black;
-} */
+.navbar-header {
+    background-color: lightgray;
+}
 
 .navbar-toggle {
     float: right;
@@ -35,7 +38,14 @@
     border: 1px solid black;
 }
 
-.navbar-toggle .sr-only {
+.navbar-brand {
+    float: left;
+    font-size: 1.5em;
+    padding: 10px 15px;
+    color: lightgrey; /* White text for contrast */
+}
+
+/* .navbar-toggle .sr-only {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -44,24 +54,25 @@
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0;
-  }
+  } */
 
   .navbar-toggle .icon-bar {
     display: block; 
     width: 22px; 
     height: 3px; 
-    background-color: #333; 
+    background-color: lightgreen; 
     margin: 4px 0; 
   }
 
-  .navbar-header {
+  /* .navbar-header {
     display: block;
     background-color: rgb(105, 104, 104);
-  }
+  } */
 
 /* Dropdown menu style */
   .navbar-collapse { 
-    background-color: rgb(83, 83, 83); 
+    background-color: lightgrey;
+    width: 100%; 
 }
 
 .navbar-collapse.collapsing {
@@ -109,9 +120,9 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
     /* adjust padding for tablet */
-    .navbar-toggle {
+    /* .navbar-toggle {
         display: none;
-      }
+      } */
     .section-tall {
         font-size: 1.8em;
         padding: 20px;
