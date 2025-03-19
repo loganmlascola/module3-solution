@@ -1,12 +1,11 @@
 /* Base Styles */
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     margin: 0;
     padding: 0;
 }
 
 .section-tall {
-    height: 800px;
+    height: 900px;
     background-color: rgb(146, 146, 146);
     padding-right: 15px;
     padding-left: 15px;
@@ -15,7 +14,6 @@ body {
 .section-tall, .menu-item {
     padding: 0;
     margin: 15px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* Navigation bar is not fixed and scrolls with page */
@@ -32,7 +30,8 @@ body {
     float: left;
     font-size: 25px;
     padding: 10px 15px;
-    color: rgb(146, 146, 146); /* Black text for contrast on lightgrey */
+    color: rgb(146, 146, 146);
+
 }
 
 .navbar-header {
@@ -154,6 +153,9 @@ h1, h2 {
 
 /* Tablet (sm) */
 @media (min-width: 768px) and (max-width: 991) {
+    .visible-sm {
+        display: none;
+    }
     .container {
         padding-left: 15px;
         padding-right: 15px;
@@ -166,6 +168,7 @@ h1, h2 {
         margin-right: 0;
     }
 }
+
 
 /* Desktop (md) */
 @media (min-width: 1200px) {
