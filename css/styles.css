@@ -21,14 +21,14 @@
 }
 
 .navbar-brand {
-    float: left ;
+    float: left !important;
     font-size: 1.5em;
     padding: 10px 15px;
     color: #333;
 }
 
 .navbar-toggle {
-    float: right;
+    float: right !important;
     margin-top: 8px;
     margin-right: 15px;
     padding: 9px 10px;
