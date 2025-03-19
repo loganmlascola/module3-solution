@@ -21,6 +21,7 @@
 }
 
 .navbar-brand {
+    float: left ;
     font-size: 1.5em;
     padding: 10px 15px;
     color: #333;
@@ -32,6 +33,7 @@
     margin-right: 15px;
     padding: 9px 10px;
     border: 1px solid black;
+    z-index: 1000;
 }
 
 .navbar-toggle .sr-only {
@@ -46,10 +48,7 @@
   }
 
   .navbar-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    display: block;
   }
 
   .navbar-toggle .icon-bar {
@@ -69,12 +68,15 @@
     transition: height 0.35s ease;
   }
 
+  .navbar-nav li {
+    text-align: center;
+    border: 1px solid black;
+} 
+
 .navbar-nav li a {
     text-align: center;
     color: #000;
-    font-size: 1.2em;
     padding: 20px 0;
-    border-bottom: 1px solid black;
     width: 100%;
 }
 
@@ -82,6 +84,10 @@
     border-bottom: none;
 }
 
+.section-tall p {
+    font-size: 16px;
+
+}
 
 /* MEDIA QUERIES */
 /* Mobile (xs) */
@@ -100,16 +106,22 @@
     }
 
     /* adjustment padding for mobile  */
-    .section-tall, .menu-item {
+    .section-tall {
         font-size: 1.5em;
     }
+}
+
+@media (min-width: 768px) {
+  .navbar-toggle {
+    display: none;
+  }
 }
 
 /* Tablet (sm) */
 
 @media (min-width: 768px) and (max-width: 991px) {
     /* adjust padding for tablet */
-    .section-tall, .menu-item {
+    .section-tall {
         font-size: 1.8em;
     }
 
@@ -123,12 +135,7 @@
 /* Desktop (md) */
 @media (min-width: 992px) {
 
-    /* adjust paddinh for desktop */
-    .menu-item {
-        font-size: 1em;
-    }
-
-    /* /* style chicken heading  */
+    /* style chicken heading  */
     .section-tall {
         padding: 30px;
     }
