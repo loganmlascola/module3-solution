@@ -17,15 +17,15 @@
     position: relative;
     border: none;
     margin-bottom: 0;
-    background-color: darkgray;
+    background-color: rgb(62, 62, 62);
 }
 
-.navbar-brand {
+/* .navbar-brand {
     float: left ;
     font-size: 1.5em;
     padding: 10px 15px;
-    color: #333;
-}
+    color: black;
+} */
 
 .navbar-toggle {
     float: right;
@@ -35,7 +35,7 @@
     border: 1px solid black;
 }
 
-/* .navbar-toggle .sr-only {
+.navbar-toggle .sr-only {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -44,7 +44,7 @@
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0;
-  } */
+  }
 
   .navbar-toggle .icon-bar {
     display: block; 
@@ -54,13 +54,14 @@
     margin: 4px 0; 
   }
 
-  /* .navbar-header {
+  .navbar-header {
     display: block;
-  } */
+    background-color: rgb(105, 104, 104);
+  }
 
 /* Dropdown menu style */
   .navbar-collapse { 
-    background-color: darkgray; 
+    background-color: rgb(83, 83, 83); 
 }
 
 .navbar-collapse.collapsing {
@@ -74,8 +75,6 @@
 
 .navbar-nav li a {
     text-align: center;
-    color: #000;
-    padding: 20px 0;
     width: 100%;
 }
 
